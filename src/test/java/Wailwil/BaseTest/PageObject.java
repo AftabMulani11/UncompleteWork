@@ -39,4 +39,13 @@ public class PageObject {
 
 	@FindBy(xpath = "//a[@mattooltip='Log Out']")
 	public WebElement logoutMenu;
+
+	@FindBy(xpath = "//div[@class='mx-4 my-auto heading ng-star-inserted'][normalize-space()='Admin']")
+	public WebElement AdminMenu;
+
+	@FindBy(xpath = "//a[@class='cursor-pointer mb-3.5 menu-toggle mx-auto']")
+	public WebElement MenuExpand;
+
+	@FindBy(xpath = "//button[@id='tooltip']//*[name()='svg']")
+	public WebElement AddRow;
 }

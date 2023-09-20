@@ -5,6 +5,7 @@
   <test name="Test_1">
     <classes>
   		<class name="Wailwil.TestCases.Tc1"/>
+  		<class name="Wailwil.TestCases.Default_table"></class>
     </classes>
   </test>
 </suite> <!-- Suite_1 -->

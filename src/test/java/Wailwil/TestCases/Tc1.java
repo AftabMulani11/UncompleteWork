@@ -28,9 +28,11 @@ public class Tc1 extends driver {
             e.printStackTrace();
         }
     }
-    @AfterTest(alwaysRun = true)
+    @AfterTest(alwaysRun = false)
     public void Lout() throws IOException{
         System.out.println("Entering in logout stage");
+        pageObj.waitForElementToEnable(pageObj.MenuExpand);
+        pageObj.click(pageObj.MenuExpand); 
         pageObj.waitForElementToEnable(pageObj.userMenu);
         pageObj.click(pageObj.userMenu);
         pageObj.waitForElementToEnable(pageObj.logoutMenu);
